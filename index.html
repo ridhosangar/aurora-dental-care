@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora Dental Care – Praktik Dokter Gigi Estetik Pasirian, Lumajang</title>
+<meta name="description" content="Aurora Dental Care adalah praktik dokter gigi estetik terpercaya di Pasirian, Lumajang. Layanan bleaching, veneer, tambal estetik, cabut gigi, dan perawatan gigi anak dengan dokter berpengalaman.">
+<meta property="og:title" content="Aurora Dental Care – Praktik Dokter Gigi Estetik Pasirian, Lumajang">
+<meta property="og:description" content="Perawatan gigi terbaik dengan sentuhan estetik modern. Dipercaya ribuan pasien di Lumajang dan sekitarnya.">
+<meta property="og:image" content="logo_aurora.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
+<style>
+  :root {
+    --navy: #1a2e44;
+    --teal: #2a9d8f;
+    --teal-text: #1f756b;
+    --teal-light: #4ecdc4;
+    --teal-pale: #e8f7f6;
+    --mint: #a8edea;
+    --gold: #e9c46a;
+    --white: #ffffff;
+    --off-white: #f7fbfb;
+    --text: #1a2e44;
+    --text-muted: #5a7080;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 6vw;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 24px rgba(26,46,68,0.08);
+    transition: padding .3s;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 12px;
+    text-decoration: none;
+  }
+  .nav-logo img { height: 46px; width: auto; }
+  .nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .nav-logo-text span:first-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; font-weight: 700; color: var(--navy);
+  }
+  .nav-logo-text span:last-child {
+    font-size: .72rem; font-weight: 500; color: var(--teal-text);
+    letter-spacing: .12em; text-transform: uppercase;
+  }
+  .nav-links { display: flex; gap: 36px; list-style: none; }
+  .nav-links a {
+    text-decoration: none; font-size: .9rem; font-weight: 500;
+    color: var(--text-muted); transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--teal); }
+  .nav-cta {
+    background: var(--teal-text); color: #fff;
+    border: none; border-radius: 50px;
+    padding: 11px 26px; font-size: .88rem; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: background .2s, transform .15s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--navy); transform: translateY(-1px); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+    padding: 120px 6vw 80px;
+    background: linear-gradient(135deg, #eaf7f6 0%, #f0fbfa 40%, #e8f4ff 100%);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; right: -8vw; top: -8vw;
+    width: 60vw; height: 60vw;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(42,157,143,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(42,157,143,0.12); color: var(--teal-text);
+    border-radius: 50px; padding: 6px 16px; font-size: .78rem;
+    font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  .hero-badge span { font-size: .9rem; }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+    line-height: 1.12; color: var(--navy);
+    margin-bottom: 20px;
+  }
+  .hero h1 em { font-style: italic; color: var(--teal); }
+  .hero-sub {
+    font-size: 1.05rem; color: var(--text-muted); line-height: 1.7;
+    max-width: 480px; margin-bottom: 36px;
+  }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--teal-text), #1b8a7e);
+    color: #fff; border: none; border-radius: 50px;
+    padding: 14px 32px; font-size: .95rem; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: transform .15s, box-shadow .2s;
+    box-shadow: 0 6px 20px rgba(42,157,143,0.35);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(42,157,143,0.45); }
+  .btn-outline {
+    background: transparent; color: var(--navy);
+    border: 2px solid var(--navy); border-radius: 50px;
+    padding: 12px 28px; font-size: .95rem; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: background .2s, color .2s;
+  }
+  .btn-outline:hover { background: var(--navy); color: #fff; }
+  .hero-stats {
+    display: flex; gap: 32px; margin-top: 44px;
+  }
+  .stat-item { display: flex; flex-direction: column; }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem; font-weight: 900; color: var(--teal);
+  }
+  .stat-label { font-size: .78rem; color: var(--text-muted); font-weight: 500; }
+
+  /* Hero right: floating card mockup */
+  .hero-visual {
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .hero-logo-wrap {
+    background: #fff;
+    border-radius: 28px;
+    padding: 40px;
+    box-shadow: 0 30px 80px rgba(26,46,68,0.14);
+    animation: floatY 4s ease-in-out infinite;
+    position: relative; z-index: 2;
+  }
+  .hero-logo-wrap img { width: 220px; height: auto; display: block; }
+  .bubble {
+    position: absolute; border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal-light), var(--teal));
+    opacity: .15; pointer-events: none;
+  }
+  .bubble-1 { width: 180px; height: 180px; top: -40px; right: -30px; }
+  .bubble-2 { width: 100px; height: 100px; bottom: -20px; left: -30px; opacity: .1; }
+  @keyframes floatY {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(-14px); }
+  }
+
+  /* ── LAYANAN ── */
+  .section { padding: 90px 6vw; }
+  .section-header { text-align: center; margin-bottom: 56px; }
+  .section-tag {
+    display: inline-block; font-size: .75rem; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase; color: var(--teal-text);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.2vw, 2.8rem); color: var(--navy); line-height: 1.2;
+  }
+  .section-title em { font-style: italic; color: var(--teal); }
+  .section-sub { color: var(--text-muted); font-size: 1rem; margin-top: 12px; }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--white);
+    border: 1.5px solid #e0f0ef;
+    border-radius: 20px; padding: 32px 28px;
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+    position: relative; overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-light));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .3s;
+  }
+  .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(42,157,143,0.15); border-color: var(--teal); }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-icon {
+    font-size: 2.2rem; margin-bottom: 18px;
+    background: var(--teal-pale); width: 58px; height: 58px;
+    border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  }
+  .service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; font-weight: 700; color: var(--navy); margin-bottom: 10px;
+  }
+  .service-card p { font-size: .9rem; color: var(--text-muted); line-height: 1.65; }
+
+  /* ── DOCTORS ── */
+  .doctors { background: linear-gradient(180deg, var(--teal-pale) 0%, #fff 100%); }
+  .doctors-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 36px; max-width: 820px; margin: 0 auto;
+  }
+  .doctor-card {
+    background: #fff; border-radius: 24px; overflow: hidden;
+    box-shadow: 0 12px 40px rgba(26,46,68,0.1);
+    transition: transform .25s;
+  }
+  .doctor-card:hover { transform: translateY(-8px); }
+  .doctor-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #1e4060 100%);
+    padding: 36px 28px 28px;
+    text-align: center; position: relative;
+  }
+  .doctor-avatar {
+    width: 110px; height: 110px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--teal-light));
+    margin: 0 auto 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.4rem; border: 4px solid rgba(255,255,255,0.35);
+    overflow: hidden;
+  }
+  .doctor-avatar img {
+    width: 100%; height: 100%; object-fit: cover; object-position: top center;
+    border-radius: 50%; display: block;
+  }
+  .doctor-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem; color: #fff; font-weight: 700;
+  }
+  .doctor-title { font-size: .82rem; color: var(--mint); margin-top: 4px; }
+  .doctor-body { padding: 26px 28px; }
+  .doctor-info { display: flex; flex-direction: column; gap: 10px; }
+  .info-row { display: flex; align-items: flex-start; gap: 10px; font-size: .88rem; }
+  .info-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+  .info-text { color: var(--text-muted); line-height: 1.5; }
+  .info-text strong { color: var(--navy); }
+
+  /* ── WHY US ── */
+  .why-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center;
+  }
+  .why-list { list-style: none; display: flex; flex-direction: column; gap: 22px; }
+  .why-item { display: flex; gap: 18px; align-items: flex-start; }
+  .why-icon {
+    flex-shrink: 0; width: 48px; height: 48px; border-radius: 14px;
+    background: linear-gradient(135deg, var(--teal-text), #1b8a7e);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; color: #fff;
+  }
+  .why-text h4 { font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+  .why-text p { font-size: .9rem; color: var(--text-muted); line-height: 1.6; }
+  .why-visual {
+    background: linear-gradient(135deg, #1a2e44, #1e4060);
+    border-radius: 28px; padding: 44px;
+    text-align: center; color: #fff;
+    box-shadow: 0 30px 70px rgba(26,46,68,0.2);
+  }
+  .why-visual img { width: 130px; margin-bottom: 24px; }
+  .why-visual h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem; margin-bottom: 12px;
+  }
+  .why-visual p { font-size: .92rem; color: var(--mint); line-height: 1.7; }
+  .rating-row { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 20px; }
+  .stars { color: var(--gold); font-size: 1.2rem; }
+  .rating-text { font-size: .85rem; color: #aac8d4; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { background: var(--off-white); }
+  .testi-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .testi-card {
+    background: #fff; border-radius: 20px; padding: 28px;
+    box-shadow: 0 4px 20px rgba(26,46,68,0.07);
+    transition: transform .2s;
+  }
+  .testi-card:hover { transform: translateY(-4px); }
+  .testi-stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; }
+  .testi-text { font-size: .92rem; color: var(--text-muted); line-height: 1.7; font-style: italic; margin-bottom: 18px; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--teal), var(--teal-light));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; color: #fff; font-weight: 700;
+  }
+  .testi-name { font-weight: 600; color: var(--navy); font-size: .9rem; }
+  .testi-loc { font-size: .78rem; color: var(--text-muted); }
+
+  /* ── CONTACT ── */
+  .contact-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #1e4060 100%);
+    color: #fff; padding: 90px 6vw;
+  }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: start;
+  }
+  .contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem); margin-bottom: 16px;
+  }
+  .contact-info p { color: #a8c8d8; line-height: 1.7; margin-bottom: 32px; }
+  .contact-items { display: flex; flex-direction: column; gap: 20px; }
+  .contact-item { display: flex; gap: 14px; align-items: flex-start; }
+  .c-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(42,157,143,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; flex-shrink: 0;
+  }
+  .c-label { font-size: .75rem; color: var(--mint); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+  .c-value { font-size: .95rem; color: #fff; margin-top: 2px; line-height: 1.5; }
+  .contact-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 24px; padding: 36px;
+    backdrop-filter: blur(8px);
+  }
+  .contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; margin-bottom: 24px;
+  }
+  .jam-grid { display: grid; gap: 12px; }
+  .jam-row { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .jam-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .jam-day { font-size: .9rem; color: #a8c8d8; }
+  .jam-time { font-size: .9rem; color: #fff; font-weight: 500; }
+  .jam-badge {
+    background: rgba(42,157,143,0.3); color: var(--teal-light);
+    font-size: .72rem; font-weight: 600; padding: 3px 10px; border-radius: 50px;
+  }
+  .wa-btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: #25d366; color: #fff;
+    border-radius: 14px; padding: 15px; text-decoration: none;
+    font-weight: 600; font-size: .95rem; margin-top: 24px;
+    transition: background .2s, transform .15s;
+  }
+  .wa-btn:hover { background: #1eb655; transform: scale(1.02); }
+  .wa-btn svg { width: 22px; height: 22px; fill: #fff; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #111e2d; color: #7994a2;
+    padding: 32px 6vw; text-align: center;
+    font-size: .85rem; line-height: 1.7;
+  }
+  footer a { color: var(--teal-light); text-decoration: underline; text-underline-offset: 2px; }
+
+  /* ── FLOAT WA BUTTON ── */
+  .float-wa {
+    position: fixed; bottom: 28px; right: 28px; z-index: 200;
+    background: #25d366; color: #fff;
+    border-radius: 50%; width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+    text-decoration: none;
+    animation: pulse 2.5s ease-in-out infinite;
+    transition: transform .15s;
+  }
+  .float-wa:hover { transform: scale(1.1); }
+  .float-wa svg { width: 28px; height: 28px; fill: #fff; }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+    50%      { box-shadow: 0 6px 36px rgba(37,211,102,0.7); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; text-align: center; gap: 50px; }
+    .hero-sub { max-width: 100%; }
+    .hero-actions { justify-content: center; }
+    .hero-stats { justify-content: center; }
+    .hero-visual { order: -1; }
+    .hero-logo-wrap img { width: 160px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  .nav-toggle {
+    display: none; background: none; border: none; cursor: pointer;
+    width: 40px; height: 40px; flex-direction: column; align-items: center;
+    justify-content: center; gap: 5px; flex-shrink: 0;
+  }
+  .nav-toggle span {
+    width: 24px; height: 2px; background: var(--navy); border-radius: 2px;
+    transition: transform .25s, opacity .25s;
+  }
+  .nav-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.active span:nth-child(2) { opacity: 0; }
+  .nav-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 640px) {
+    nav { padding: 14px 5vw; }
+    .nav-links {
+      display: flex; flex-direction: column; gap: 0;
+      position: fixed; top: 76px; left: 0; right: 0;
+      background: rgba(255,255,255,0.98); backdrop-filter: blur(12px);
+      box-shadow: 0 12px 24px rgba(26,46,68,0.1);
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height .3s ease, opacity .2s ease;
+    }
+    .nav-links.open { max-height: 320px; opacity: 1; }
+    .nav-links li { width: 100%; }
+    .nav-links a {
+      display: block; padding: 16px 6vw; border-bottom: 1px solid #eef5f4;
+      font-size: 1rem;
+    }
+    .nav-toggle { display: flex; }
+    .nav-cta { padding: 10px 18px; font-size: .82rem; }
+    .section { padding: 64px 5vw; }
+  }
+
+  /* entrance animations */
+  [data-reveal] { opacity: 0; transform: translateY(30px); transition: opacity .6s, transform .6s; }
+  [data-reveal].visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- FLOATING WA -->
+<a href="https://wa.me/6283833771126" target="_blank" class="float-wa" title="Chat WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <img src="logo_aurora.jpg" alt="Aurora Dental Care Logo" width="46" height="46">
+    <div class="nav-logo-text">
+      <span>Aurora Dental Care</span>
+      <span>Pasirian · Lumajang</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#dokter">Dokter</a></li>
+    <li><a href="#tentang">Tentang Kami</a></li>
+    <li><a href="#testimoni">Testimoni</a></li>
+  </ul>
+  <a href="https://wa.me/6283833771126" target="_blank" class="nav-cta">📅 Buat Janji</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <div class="hero-badge"><span>✦</span> Praktik Dokter Gigi Estetik Terpercaya di Lumajang</div>
+    <h1>Senyum <em>Indah</em><br>Dimulai dari Sini</h1>
+    <p class="hero-sub">Aurora Dental Care hadir di Pasirian untuk memberikan perawatan gigi terbaik dengan sentuhan estetik modern. Dipercaya ribuan pasien di Lumajang dan sekitarnya.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6283833771126" target="_blank" class="btn-primary">💬 Konsultasi Sekarang</a>
+      <a href="#layanan" class="btn-outline">Lihat Layanan</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">1000+</span>
+        <span class="stat-label">Pasien Puas</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">6+</span>
+        <span class="stat-label">Tahun Pengalaman</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Dokter Gigi</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="hero-logo-wrap">
+      <img src="logo_aurora.jpg" alt="Aurora Dental Care" width="220" height="220">
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section class="section" id="layanan">
+  <div class="section-header" data-reveal>
+    <span class="section-tag">✦ Layanan Kami</span>
+    <h2 class="section-title">Perawatan <em>Lengkap</em> untuk<br>Senyum Sempurna Anda</h2>
+    <p class="section-sub">Kami menghadirkan layanan gigi estetik dan umum dengan teknologi modern</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card" data-reveal>
+      <div class="service-icon">✨</div>
+      <h3>Bleaching Gigi</h3>
+      <p>Pemutihan gigi profesional menggunakan bahan terjamin aman. Dapatkan senyum cerah bak bintang dalam sekali kunjungan.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">💎</div>
+      <h3>Veneer Gigi</h3>
+      <p>Lapisan tipis porselain untuk mengubah bentuk, warna, dan ukuran gigi. Hasilnya natural dan tahan lama hingga bertahun-tahun.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">🦷</div>
+      <h3>Tambal Gigi Estetik</h3>
+      <p>Penambalan dengan bahan komposit sewarna gigi. Tidak terlihat, tidak terasa — hanya senyum sempurna yang tersisa.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">🔧</div>
+      <h3>Scaling & Polishing</h3>
+      <p>Pembersihan karang gigi dan pemolesan permukaan gigi untuk kesehatan gusi optimal dan napas lebih segar.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">👑</div>
+      <h3>Crown & Bridge</h3>
+      <p>Restorasi mahkota gigi yang rusak parah atau penggantian gigi hilang dengan estetika dan fungsi terbaik.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">📐</div>
+      <h3>Orthodonti / Kawat Gigi</h3>
+      <p>Perawatan merapikan susunan gigi dengan kawat gigi konvensional sesuai kebutuhan Anda.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">😌</div>
+      <h3>Pencabutan & Bedah Minor</h3>
+      <p>Pencabutan gigi dewasa, gigi susu, hingga pencabutan gigi bungsu dengan teknik minimal trauma dan anestesi lokal.</p>
+    </div>
+    <div class="service-card" data-reveal>
+      <div class="service-icon">🧒</div>
+      <h3>Perawatan Gigi Anak</h3>
+      <p>Pendekatan ramah anak untuk pemeriksaan rutin, tambal gigi susu, dan edukasi menjaga kebersihan mulut sejak dini.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOKTER -->
+<section class="section doctors" id="dokter">
+  <div class="section-header" data-reveal>
+    <span class="section-tag">✦ Tim Dokter Kami</span>
+    <h2 class="section-title">Ditangani Dokter <em>Berpengalaman</em><br>Alumni Universitas Jember</h2>
+    <p class="section-sub">Keduanya berpraktek lebih dari 6 tahun dan berkomitmen pada hasil terbaik untuk pasien</p>
+  </div>
+  <div class="doctors-grid">
+    <div class="doctor-card" data-reveal>
+      <div class="doctor-header">
+        <div class="doctor-avatar"><img src="foto_ridho.jpg" alt="drg. Ridho" width="110" height="110" loading="lazy" onerror="this.parentElement.innerHTML='🦷'"></div>
+        <div class="doctor-name">drg. Ridho</div>
+        <div class="doctor-title">Dokter Gigi Umum & Estetik</div>
+      </div>
+      <div class="doctor-body">
+        <div class="doctor-info">
+          <div class="info-row">
+            <span class="info-icon">🎓</span>
+            <span class="info-text"><strong>Pendidikan:</strong> Fakultas Kedokteran Gigi, Universitas Jember</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">⏱️</span>
+            <span class="info-text"><strong>Pengalaman:</strong> Lebih dari 6 tahun berpraktek aktif</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🏆</span>
+            <span class="info-text"><strong>Keahlian:</strong> Cabut gigi, Veneer, bedah minor, Tambal gigi estetik, gigi palsu, orthodonti</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">💬</span>
+            <span class="info-text">Dikenal ramah, teliti, dan sabar dalam menjelaskan kondisi gigi pasien</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doctor-card" data-reveal>
+      <div class="doctor-header">
+        <div class="doctor-avatar"><img src="foto_bela.jpg" alt="drg. Bela" width="110" height="110" loading="lazy" onerror="this.parentElement.innerHTML='🦷'"></div>
+        <div class="doctor-name">drg. Bela</div>
+        <div class="doctor-title">Dokter Gigi Umum & Estetik</div>
+      </div>
+      <div class="doctor-body">
+        <div class="doctor-info">
+          <div class="info-row">
+            <span class="info-icon">🎓</span>
+            <span class="info-text"><strong>Pendidikan:</strong> Fakultas Kedokteran Gigi, Universitas Jember</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">⏱️</span>
+            <span class="info-text"><strong>Pengalaman:</strong> Lebih dari 6 tahun berpraktek aktif</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🏆</span>
+            <span class="info-text"><strong>Keahlian:</strong> Perawatan anak, bleaching, tambal estetik, scaling, crown, orthodonti</span>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">💬</span>
+            <span class="info-text">Pendekatan empatik dan komunikatif, terutama kepada pasien anak dan lansia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="tentang">
+  <div class="why-grid">
+    <div data-reveal>
+      <span class="section-tag">✦ Mengapa Aurora?</span>
+      <h2 class="section-title" style="text-align:left; margin-bottom:32px">Praktik Dokter Gigi <em>Terpercaya</em><br>di Pasirian</h2>
+      <ul class="why-list">
+        <li class="why-item">
+          <div class="why-icon">🏥</div>
+          <div class="why-text">
+            <h4>Fasilitas Modern & Steril</h4>
+            <p>Peralatan dental terkini dengan standar sterilisasi tinggi untuk kenyamanan dan keamanan setiap pasien.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">💡</div>
+          <div class="why-text">
+            <h4>Konsultasi Transparan</h4>
+            <p>Kami menjelaskan kondisi gigi dan rencana perawatan secara jelas sebelum tindakan apapun dilakukan.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">📍</div>
+          <div class="why-text">
+            <h4>Lokasi Strategis di Pasirian</h4>
+            <p>Mudah dijangkau dari seluruh penjuru Pasirian dan Lumajang. Parkir luas, akses nyaman.</p>
+          </div>
+        </li>
+        <li class="why-item">
+          <div class="why-icon">💬</div>
+          <div class="why-text">
+            <h4>Konsultasi via WhatsApp</h4>
+            <p>Tanya-jawab cepat dan mudah sebelum kunjungan. Kami siap membantu kapan pun Anda butuhkan.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="why-visual" data-reveal>
+      <img src="logo_aurora.jpg" alt="Aurora Dental Care" width="130" height="130" loading="lazy">
+      <p>Praktik dokter gigi estetik terpercaya di Pasirian, Lumajang. Kami berkomitmen memberikan senyum terbaik untuk Anda dan keluarga.</p>
+      <div class="rating-row">
+        <span class="stars">★★★★★</span>
+        <span class="rating-text">Dipercaya pasien Lumajang & sekitarnya</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section testimonials" id="testimoni">
+  <div class="section-header" data-reveal>
+    <span class="section-tag">✦ Testimoni Pasien</span>
+    <h2 class="section-title">Apa Kata <em>Pasien Kami</em></h2>
+    <p class="section-sub">Kepuasan pasien adalah prioritas utama kami</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Bleaching di sini hasilnya luar biasa! Gigi saya jadi putih bersih, dokternya ramah banget dan prosesnya nyaman. Sangat direkomendasikan!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">S</div>
+        <div>
+          <div class="testi-name">Sari Dewi</div>
+          <div class="testi-loc">Pasirian, Lumajang</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"drg. Ridho sangat profesional. Veneer gigi saya hasilnya natural sekali, teman-teman sampai nggak percaya kalau itu veneer!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">A</div>
+        <div>
+          <div class="testi-name">Andi Pratama</div>
+          <div class="testi-loc">Lumajang Kota</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Anak saya yang takut ke dokter gigi pun jadi nyaman di sini berkat pendekatan drg. Bela yang sabar dan pengertian. Terima kasih Aurora!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">R</div>
+        <div>
+          <div class="testi-name">Rini Susanti</div>
+          <div class="testi-loc">Tempeh, Lumajang</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Scaling & polishing pertama kali, tadinya was-was. Tapi di Aurora nyaman banget, gigi terasa bersih sekali dan napas jadi segar. Pasti balik lagi!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">F</div>
+        <div>
+          <div class="testi-name">Fajar Nugroho</div>
+          <div class="testi-loc">Pasirian, Lumajang</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Cabut gigi bungsu yang biasanya saya takut sekali, di Aurora ditangani dengan sangat tenang dan tidak sakit sama sekali. Dokternya luar biasa!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">M</div>
+        <div>
+          <div class="testi-name">Maya Lestari</div>
+          <div class="testi-loc">Candipuro, Lumajang</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card" data-reveal>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Harga terjangkau, hasil premium! Tambal gigi estetik saya sudah 2 tahun masih mulus. Klinik ini jarang ada di luar kota besar, beruntung ada di Pasirian."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">D</div>
+        <div>
+          <div class="testi-name">Dian Puspita</div>
+          <div class="testi-loc">Pronojiwo, Lumajang</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="kontak">
+  <div class="contact-grid">
+    <div class="contact-info" data-reveal>
+      <h2>Hubungi & Kunjungi Kami</h2>
+      <p>Kami siap melayani konsultasi dan perawatan gigi Anda. Hubungi kami untuk membuat janji atau tanya-tanya terlebih dahulu.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="c-icon">📍</div>
+          <div>
+            <div class="c-label">Alamat</div>
+            <div class="c-value">Perum Grand Zamzam Platinum<br>Pasirian No. C10, Lumajang</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">📱</div>
+          <div>
+            <div class="c-label">WhatsApp</div>
+            <div class="c-value">0838-3377-1126</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon">🦷</div>
+          <div>
+            <div class="c-label">Layanan</div>
+            <div class="c-value">Gigi Estetik · Umum · Anak</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-card" data-reveal>
+      <h3>🕐 Jam Praktik</h3>
+      <div class="jam-grid">
+        <div class="jam-row">
+          <span class="jam-day">Senin – Kamis</span>
+          <span class="jam-time">15.30 – 20.30 <span class="jam-badge">Buka</span></span>
+        </div>
+        <div class="jam-row">
+          <span class="jam-day">Jumat</span>
+          <span class="jam-time" style="color:#f87171;">Libur <span class="jam-badge" style="background:rgba(248,113,113,0.2);color:#f87171;">Tutup</span></span>
+        </div>
+        <div class="jam-row">
+          <span class="jam-day">Sabtu</span>
+          <span class="jam-time">08.00 – 12.00 &amp; 15.00 – 20.30 <span class="jam-badge">Buka</span></span>
+        </div>
+        <div class="jam-row">
+          <span class="jam-day">Minggu</span>
+          <span class="jam-time">08.00 – 12.00 &amp; 15.00 – 20.30 <span class="jam-badge">Buka</span></span>
+        </div>
+      </div>
+      <a href="https://wa.me/6283833771126?text=Halo%20Aurora%20Dental%20Care%2C%20saya%20ingin%20membuat%20janji%20perawatan." target="_blank" class="wa-btn">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat WhatsApp Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 <strong style="color:#4ecdc4">Aurora Dental Care</strong> · Perum Grand Zamzam Platinum Pasirian No. C10, Lumajang</p>
+  <p style="margin-top:6px">📱 <a href="https://wa.me/6283833771126">0838-3377-1126</a> · Praktik bersama drg. Ridho & drg. Bela · Alumni FKG Universitas Jember</p>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
